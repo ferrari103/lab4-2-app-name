@@ -1,0 +1,34 @@
+<div class = "calculator">
+  <h3>Калькулятор</h3>
+  <input type="text" (input)="inputHandler($event)" size="28" [value]="title">
+  <button (click)="numbers(7)">7</button>
+  <button (click)="numbers(8)">8</button>
+  <button  (click)="numbers(9)">9</button>
+  <button id = "divide" (click) = "operations('/')" >÷</button>
+  <button>←</button>
+  <button>C</button><br>
+
+  <button  (click)="numbers(4)">4</button>
+  <button  (click)="numbers(5)">5</button>
+  <button  (click)="numbers(6)">6</button>
+  <button id = "multiply" (click) = "operations('*')" >x</button>
+  <button>(</button>
+  <button>)</button><br>
+
+  <button  (click)="numbers(1)">1</button>
+  <button  (click)="numbers(2)">2</button>
+  <button  (click)="numbers(3)">3</button>
+  <button id = "minus" (click) = "operations('-')" >-</button>
+  <button>x²</button>
+  <button>√</button><br>
+
+  <button (click)="numbers(3)">0</button>
+  <button>,</button>
+  <button>%</button>
+  <button id = "add" (click) = "operations('+')">+</button>
+  <button class = "button_space" (click)="equal()">=</button>
+
+  <div id = "myDIV1"></div>
+  <div id = "myDIV2"></div>
+  <div id = "myDIV3"></div>
+</div>
